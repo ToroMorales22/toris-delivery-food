@@ -163,3 +163,16 @@ footer {
         max-width: 300px;
     }
 }
+
+img {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.logo {
+    filter: none;
+}
+
+.icono-red {
+    filter: none;
+}
