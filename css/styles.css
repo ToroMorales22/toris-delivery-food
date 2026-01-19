@@ -1,0 +1,165 @@
+/* =============================
+   RESET GENERAL
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================
+   ESTILOS GENERALES
+============================= */
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* =============================
+   HEADER
+============================= */
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* =============================
+   NAV
+============================= */
+nav {
+    background-color: #070a03;
+    border: 1px solid #fcfffd;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* =============================
+   MAIN / SECCIONES
+============================= */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* =============================
+   MENÚ / GRID
+============================= */
+.contenedor-comidas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.item-comida {
+    text-align: center;
+    margin: 20px;
+}
+
+.comida {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* =============================
+   MAPA
+============================= */
+iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* =============================
+   FOOTER
+============================= */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icono-red {
+    width: 30px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .comida {
+        width: 100%;
+        max-width: 300px;
+    }
+}
